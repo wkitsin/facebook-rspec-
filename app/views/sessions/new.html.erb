@@ -1,0 +1,7 @@
+<h1>Form</h1>
+
+<%= form_for :sessions, url: sessions_path do |form| %>
+	<%= form.text_field "Password" %>
+	<%= form.text_field "Email" %>
+	<%= form.button "submit" %>
+<% end %>

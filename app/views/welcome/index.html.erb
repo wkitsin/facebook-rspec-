@@ -1,0 +1,6 @@
+<%= link_to "Home", root_path %>
+
+
+<%= link_to_if(@session.nil?, "Log In", { controller: "sessions", action: "new" }) %>
+
+<%= link_to_if(@session.nil?, "Log Out", { controller: "sessions", action: "destroy" }) %>
